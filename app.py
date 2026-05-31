@@ -27,13 +27,13 @@ st.markdown("""
     }
     
     
-    h1, h2, h3 {
-        color: #c2185b;
+    h1, h2, h3, h4, h5, h6 {
+        color: #c2185b !important;
     }
     
     
     p, label, .stMarkdown {
-        color: #880e4f;
+        color: #880e4f  !important;
     }
     
     
