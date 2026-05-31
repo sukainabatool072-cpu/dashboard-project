@@ -1,7 +1,7 @@
 import pandas as pd
 
 def load_data():
-    df = pd.read_csv("data/wta_matches_2016.csv")
+    df = pd.read_csv("wta_matches_2016.csv")
     
     # Convert tourney_date from integer like 20160104 to a real date
     df['tourney_date'] = pd.to_datetime(df['tourney_date'].astype(str), format='%Y%m%d')
