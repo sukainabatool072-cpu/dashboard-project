@@ -84,7 +84,7 @@ def plot_box_ages(df):
         df["loser_age"].dropna().values
     ]
     fig, ax = plt.subplots(figsize=(5, 4))
-    bp = ax.boxplot(data, ticks_labels=["Winner Age", "Loser Age"], patch_artist=True,
+    bp = ax.boxplot(data, tick_labels=["Winner Age", "Loser Age"], patch_artist=True,
                     medianprops=dict(color="black", linewidth=2))
     colors = sns.color_palette(PALETTE, 2)
     for patch, color in zip(bp["boxes"], colors):
