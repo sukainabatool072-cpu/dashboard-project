@@ -11,6 +11,7 @@ def plot_pie_surface(df):
         counts,
         labels=counts.index,
         autopct="%1.1f%%",
+        pctdistance=1.2,
         colors=sns.color_palette(PALETTE, len(counts)),
         startangle=90,
         wedgeprops=dict(edgecolor="white", linewidth=1.5)
